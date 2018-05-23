@@ -11,7 +11,7 @@ render(
     <div>
       <Router history={hashHistory} routes={routes}>
       </Router>
-      <DevTools/>
+      {/* <DevTools/> */}
     </div>
   </Provider>,
     document.getElementById('root')

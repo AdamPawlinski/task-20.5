@@ -10,11 +10,11 @@ import ContinentsContainer from './containers/continent-container.component';
 
 
 export default (
-  <Route path='/' component={Navigation}>    
+  <Route path='/' component={Navigation}>
     <IndexRoute component={Home}/>
-    <Route path='countries' component={CountryFlagContainer}>
+    <Route path='countries'>
       <IndexRoute component={CountryFlagContainer}/>
-      <Route path='country:id' component={CountryDetailsContainer}/>
+      <Route path='country/:id' component={CountryDetailsContainer}/>
     </Route>
     <Route path='continent' component={ContinentsContainer}/>
     <Route path='contact' component={Contact}/>

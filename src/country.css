@@ -1,9 +1,9 @@
-#root {
+:root {
     background: #eee;
     height: 100vh;
 }
 
-.countryWrapper {
+:local(.countryWrapper) {
     height: 400px;
     width: 300px;
     border-radius: 10px;
@@ -11,7 +11,7 @@
     margin: 20px auto;
 }
 
-header {
+:local(header) {
     position: relative;
     width: 100%;
     height: 30%;
@@ -20,7 +20,7 @@ header {
     border-top-right-radius: 10px;
 }
 
-.countryPhoto {
+:local(.countryPhoto) {
     position: absolute;
     width: 115px;
     height: 115px;
@@ -32,12 +32,12 @@ header {
     margin: 0 auto;
 }
 
-.countryInfo {
+:local(.countryInfo) {
     padding: 55px 5px 65px;
     font-family: 'Roboto Condesed';
 }
 
-h1 {
+:local(h1) {
     font-size: 28px;
     letter-spacing: 1.2px;
     text-align: center;
@@ -45,7 +45,7 @@ h1 {
     color: #323232
 }
 
-h2 {
+:local(h2) {
     text-align: center;
     font-weight: 400;
     font-size: 16px;
@@ -53,27 +53,27 @@ h2 {
     color: #5f5f5f;
 }
 
-.info {
+:local(.info) {
     display: flex;
     justify-content: space-around;
 }
 
-.info div {
+:local(.info div) {
     text-align: center;
     width: 33%;
 }
 
-.info div span {
+:local(.info div span) {
     display: block;
 }
 
-.info div span:nth-of-type(1) {
+:local(.info div span:nth-of-type(1)) {
     font-weight: bold;
     font-size: 24px;
     color: #323232;
 }
 
-.info div span:nth-of-type(2) {
+:local(.info div span:nth-of-type(2)) {
     font-size: 12px;
     text-transform: uppercase;
     color: #5f5f5f;
@@ -81,25 +81,25 @@ h2 {
     padding: 6px 0;
 }
 
-.countriesList {
+:local(.countriesList) {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.singleCountry {
+:local(.singleCountry) {
     width: 26%;
     height: 300px;
     margin-top: 50px;
 }
 
-.countryLogoWrapper {
+:local(.countryLogoWrapper) {
     height: 100%;
     width: 100%;
 }
 
-.countryLogo {
+:local(.countryLogo) {
     max-width: 100%;
     max-height: 100%;
 }
