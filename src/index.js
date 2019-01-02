@@ -1,7 +1,18 @@
 import React from 'react';
 import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import store from './store/index';
+import { Router, hashHistory } from 'react-router';
+import routes from './routes';
+import DevTools from './DevTools';
 
 render(
-    <h1>Inicjalizacja projektu</h1>,
+  <Provider store={store}>
+    <div>
+      <Router history={hashHistory} routes={routes}>
+      </Router>
+      {/* <DevTools/> */}
+    </div>
+  </Provider>,
     document.getElementById('root')
 );
